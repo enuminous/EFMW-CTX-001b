@@ -1,0 +1,32 @@
+{
+  "packet_id": "EFMW-CTX-001b",
+  "title": "Apparatus-current coupling in two measurement contexts",
+  "status": "proposal_for_live_hardware_test",
+  "evidence_status": "synthetic_qa_only_no_live_hardware_results",
+  "source_shot_level_data_available": false,
+  "contexts": [
+    "C0",
+    "C1"
+  ],
+  "p_by_context": {
+    "C0": 0.5,
+    "C1": 0.5
+  },
+  "primary_model": "E[a_t | C_t, J_t] = p_C + kappa_c * J_t^(c)",
+  "primary_null": "kappa_c = 0",
+  "design_alternative": "abs(kappa_c) >= 0.05",
+  "ewma": {
+    "alpha": 0.05,
+    "beta": 0.05,
+    "epsilon": 1e-08
+  },
+  "centering": "within context before pooling",
+  "estimator": "OLS; analytic standard error",
+  "pass": {
+    "abs_z_live_pooled_at_least": 3,
+    "context_estimates_same_sign": true,
+    "abs_z_live_sham_below": 2,
+    "abs_z_blank_below": 2
+  },
+  "scope_limit": "A pass supports only a device-level coupling on the tested apparatus; it does not establish a spacetime information tensor or new physics."
+}

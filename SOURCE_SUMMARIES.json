@@ -1,0 +1,68 @@
+{
+  "evidence_status": "Synthetic toy simulations only; no live hardware data.",
+  "source_shot_level_data_available": false,
+  "attempt_001": {
+    "description": "Initial toy simulation as reported in the pasted source.",
+    "true_kappa_planted": 0.08,
+    "N_per_context": 4000,
+    "N_total": 8000,
+    "p_qm": 0.5,
+    "pooled": {
+      "kappa_hat": 0.063,
+      "SE": 0.038,
+      "z_approx": 1.66
+    },
+    "context_C0": {
+      "kappa_hat": 0.11,
+      "SE": 0.05
+    },
+    "context_C1": {
+      "kappa_hat": 0.011,
+      "SE": 0.055
+    },
+    "within_context_sham": {
+      "kappa_hat": 0.096,
+      "SE": 0.038,
+      "z_approx": 2.5
+    },
+    "separate_zero_coupling_world": {
+      "kappa_hat": -0.026,
+      "SE": 0.036
+    },
+    "source_assessment": "Failed nail: underpowered, contexts did not agree, sham was not quiet."
+  },
+  "attempt_001b": {
+    "description": "Refined toy simulation as reported in the pasted source.",
+    "true_kappa_planted": 0.05,
+    "N_reported": 160000,
+    "planned_SE": 0.0079,
+    "pooled": {
+      "kappa_hat": 0.04,
+      "SE": 0.0079,
+      "z": 5.06
+    },
+    "context_C0": {
+      "kappa_hat": 0.034,
+      "SE": 0.011,
+      "z": 3.11
+    },
+    "context_C1": {
+      "kappa_hat": 0.047,
+      "SE": 0.011,
+      "z": 4.08
+    },
+    "context_signs_agree": true,
+    "planted_sham": {
+      "kappa_hat": -0.015,
+      "SE": 0.0079,
+      "z": null
+    },
+    "blank": {
+      "kappa_hat": -0.0035,
+      "SE": 0.008,
+      "z": null
+    },
+    "source_assessment": "Packet passed in planted toy world only; method check, not physics."
+  },
+  "note": "Values are transcribed from the supplied source; malformed duplicated math markup was normalized. Null z values are left null where the source did not state a z statistic explicitly."
+}
